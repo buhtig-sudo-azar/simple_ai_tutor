@@ -1,0 +1,5 @@
+gitPush.sh
+.env
+.venv
+node_modules
+gitsettings.txt
