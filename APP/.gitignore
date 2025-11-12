@@ -1,8 +1,7 @@
 
 env
-.oryx
 venv
 node_modules
-gitsettings.txt
+
 .env
 .venv
