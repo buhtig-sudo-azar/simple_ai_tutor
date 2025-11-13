@@ -2,7 +2,7 @@ source env/bin/activate
 
 
 
- #  GNU nano 7.2                                                        /home/codespace/.bashrc                                                                  
+                                                            
  # cd() {
  #   builtin cd "$@" || return
 
