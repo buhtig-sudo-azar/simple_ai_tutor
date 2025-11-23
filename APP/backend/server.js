@@ -5,8 +5,8 @@ const app = express();
 
 app.use(cors({
   origin: [
-    'http://localhost:3000',
-    'http://localhost:5173',
+    'http://localhost:3000', // react 
+    'http://localhost:5173', // vite 
     'https://bug-free-palm-tree-69vq4xw7q7j9256xg-5173.app.github.dev' // фронтенд
   ],
   credentials: true
