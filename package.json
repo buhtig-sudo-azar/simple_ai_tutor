@@ -1,0 +1,11 @@
+{
+  "name": "simple-ai-tutor-root",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd APP/frontend && npm install && npm run build",
+    "dev": "cd APP/frontend && npm run dev"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
