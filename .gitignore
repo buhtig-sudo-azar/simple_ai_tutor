@@ -2,6 +2,6 @@
 env
 venv
 node_modules
-
+.env.local
 .env
 .venv
