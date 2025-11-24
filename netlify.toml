@@ -2,18 +2,23 @@
   command = "cd APP/frontend && npm install && npm run build"
   publish = "APP/frontend/dist"
 
+# Перезаписываем все заголовки
+[[headers]]
+  for = "/*"
+  [headers.values]
+    "X-Frame-Options" = "DENY"
+    "X-XSS-Protection" = "1; mode=block"
+    "X-Content-Type-Options" = "nosniff"
+
+# Особые заголовки для JS файлов
+[[headers]]
+  for = "/assets/*.js"
+  [headers.values]
+    "Content-Type" = "application/javascript; charset=utf-8"
+    "Cache-Control" = "public, max-age=31536000"
+
+# Роутинг для SPA
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-# Явно указываем заголовки для JS файлов
-[[headers]]
-  for = "/*.js"
-  [headers.values]
-    "Content-Type" = "application/javascript"
-
-[[headers]]
-  for = "/*.css"
-  [headers.values]
-    "Content-Type" = "text/css"

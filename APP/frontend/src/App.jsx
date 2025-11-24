@@ -1,13 +1,14 @@
-// App.jsx
-import React from 'react'
-import TestAnalysis from './components/TestAnalysis'
-
 function App() {
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-      <h1>🚀 AI Анализатор текста</h1>
-      <p>Тестируем соединение фронтенда и бэкенда</p>
-      <TestAnalysis />
+    <div style={{ padding: '20px', fontFamily: 'Arial' }}>
+      <h1>✅ Netlify Test Successful!</h1>
+      <p>If you see this, React is working on Netlify!</p>
+      <button 
+        onClick={() => alert('Everything works!')}
+        style={{ padding: '10px 20px', fontSize: '16px' }}
+      >
+        Click Me
+      </button>
     </div>
   )
 }
