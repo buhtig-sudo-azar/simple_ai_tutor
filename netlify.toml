@@ -1,7 +1,19 @@
 [build]
-  command = "npm run build"
+  command = "cd APP/frontend && npm install && npm run build"
   publish = "APP/frontend/dist"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
+  status = 200
+
+# Явно указываем заголовки для JS файлов
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    "Content-Type" = "application/javascript"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    "Content-Type" = "text/css"
