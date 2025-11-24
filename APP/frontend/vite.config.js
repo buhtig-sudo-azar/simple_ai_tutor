@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  base: './',  // ← ДОБАВЬ ЭТУ СТРОЧКУ!
   server: {
     proxy: {
       '/api': {
@@ -12,7 +13,6 @@ export default defineConfig({
       }
     }
   },
-  // Добавляем настройки для сборки
   build: {
     outDir: 'dist',
     emptyOutDir: true
