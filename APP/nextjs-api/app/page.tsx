@@ -33,9 +33,8 @@ export default function Home() {
             Серверный AI + Локальный браузерный AI
           </p>
         </div>
-
-        {/* Browser AI Section */}
-        {/* <div style={{ marginBottom: "40px" }}>
+        Browser AI Section
+        <div style={{ marginBottom: "40px" }}>
           <div style={{ textAlign: "center", marginBottom: "20px" }}>
             <h2 style={{ color: "#2d3748" }}>🌐 Браузерный AI</h2>
             <p style={{ color: "#666" }}>
@@ -43,9 +42,8 @@ export default function Home() {
             </p>
           </div>
           <BrowserAI />
-        </div> */}
-
-        {/* Server AI Section */}
+        </div>
+        Server AI Section
         <div>
           <div style={{ textAlign: "center", marginBottom: "20px" }}>
             <h2 style={{ color: "#2d3748" }}>☁️ Серверный AI</h2>
@@ -55,8 +53,7 @@ export default function Home() {
           </div>
           <AIChat />
         </div>
-
-        {/* Comparison */}
+        Comparison
         <div
           style={{
             display: "grid",
