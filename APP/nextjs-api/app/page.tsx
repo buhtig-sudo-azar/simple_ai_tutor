@@ -33,7 +33,7 @@ export default function Home() {
             Серверный AI + Локальный браузерный AI
           </p>
         </div>
-        Browser AI Section
+        {/* Browser AI Section */}
         <div style={{ marginBottom: "40px" }}>
           <div style={{ textAlign: "center", marginBottom: "20px" }}>
             <h2 style={{ color: "#2d3748" }}>🌐 Браузерный AI</h2>
@@ -43,7 +43,7 @@ export default function Home() {
           </div>
           <BrowserAI />
         </div>
-        Server AI Section
+        {/* Server AI Section */}
         <div>
           <div style={{ textAlign: "center", marginBottom: "20px" }}>
             <h2 style={{ color: "#2d3748" }}>☁️ Серверный AI</h2>
